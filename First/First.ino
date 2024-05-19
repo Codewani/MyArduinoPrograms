@@ -1,6 +1,6 @@
 void setup() {
   // put your setup code here, to run once:
-  pinMode (13, OUTPUT);
+  pinMode (8, OUTPUT);
 }
 
 void loop() {
@@ -10,8 +10,8 @@ void loop() {
   //Blinking LED light.
   //Delay 15 allows the LED to be on for 15 milliseconds and off for 15 milliseconds.
   //After attempting different combinations this is the minumum delay combination that makes the blink percievable.
-  digitalWrite (13, HIGH);
+  digitalWrite (8, HIGH);
   delay(15);
-  digitalWrite (13, LOW);
+  digitalWrite (8, LOW);
   delay(15);
 }
