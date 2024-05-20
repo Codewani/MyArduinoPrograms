@@ -11,53 +11,27 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  //... : S
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (longDelay);
-  digitalWrite (redPin, LOW);
-  delay (longDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (longDelay);
-  digitalWrite (redPin, LOW);
-  delay (longDelay);
-
-
-  digitalWrite (redPin, HIGH);
-  delay (longDelay);
-  digitalWrite (redPin, LOW);
-  delay (longDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
-  digitalWrite (redPin, HIGH);
-  delay (shortDelay);
-  digitalWrite (redPin, LOW);
-  delay (shortDelay);
-
+  //. . . : S
+  for (int i = 0; i < 3; i++){
+    digitalWrite (redPin, HIGH);
+    delay (shortDelay);
+    digitalWrite (redPin, LOW);
+    delay (shortDelay);
+  }
+  //_ _ _ : O
+  for (int i = 0; i < 3; i++){
+    digitalWrite (redPin, HIGH);
+    delay (longDelay);
+    digitalWrite (redPin, LOW);
+    delay (longDelay);
+  }
+  //. . . : S
+  for (int i = 0; i < 3; i++){
+    digitalWrite (redPin, HIGH);
+    delay (shortDelay);
+    digitalWrite (redPin, LOW);
+    delay (shortDelay);
+  }
   delay (longW);
 
 }
