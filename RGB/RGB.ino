@@ -1,8 +1,13 @@
+int wait = 500;
+int redLED = 8;
+int blueLED = 2;
+int greenLED = 5;
+
 void setup() {
   // put your setup code here, to run once:
-  pinMode (8, OUTPUT);
-  pinMode (2, OUTPUT);
-  pinMode (5, OUTPUT);
+  pinMode (redLED, OUTPUT);
+  pinMode (blueLED, OUTPUT);
+  pinMode (greenLED, OUTPUT);
 }
 
 void loop() {
@@ -14,26 +19,26 @@ void loop() {
 
   //This Loop makes a Red LED blink 5 times.
   for (int i = 0; i < 5; i++){
-    digitalWrite (8, HIGH);
-    delay(500);
-    digitalWrite (8, LOW);
-    delay(500);
+    digitalWrite (redLED, HIGH);
+    delay(wait);
+    digitalWrite (redLED, LOW);
+    delay(wait);
   }
 
   //This Loop makes a Blue LED blink 10 times.
   for (int i = 0; i < 10; i++){
-    digitalWrite (2, HIGH);
-    delay(500);
-    digitalWrite (2, LOW);
-    delay(500);
+    digitalWrite (blueLED, HIGH);
+    delay(wait);
+    digitalWrite (blueLED, LOW);
+    delay(wait);
   }
 
   //This Loop makes a Green LED blink 15 times.
   for (int i = 0; i < 15; i++){
-    digitalWrite (5, HIGH);
-    delay(500);
-    digitalWrite (5, LOW);
-    delay(500);
+    digitalWrite (greenLED, HIGH);
+    delay(wait);
+    digitalWrite (greenLED, LOW);
+    delay(wait);
   }
   
 }
