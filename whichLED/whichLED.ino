@@ -13,9 +13,8 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  Serial.println();
-  Serial.print(msg);
+  // prompts the user for their LED color choice and turns it on:
+  Serial.println(msg);
   while (Serial.available() == 0)
   {
 
